@@ -1,5 +1,5 @@
 //App entry point
-define(['jquery','prettify'], function() {
+define(['jquery','fw!lib/prettify/prettify'], function() {
 
   function htmlEncode(value){
     return $('<div/>').text(value).html();
