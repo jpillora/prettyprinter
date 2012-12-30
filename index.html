@@ -18,27 +18,7 @@
       <pre id="code" class="prettyprint"></pre>
     </div>
     
-
-
-    <script type="text/javascript">
-      (function() {
-        var isLocal = window.location.host.match(/localhost/),
-            script = document.createElement('script');
-            //prodHost = 'http://cgi.cse.unsw.edu.au/~jpil133/'; 
-
-        script.type = 'text/javascript';
-        script.src  = isLocal ? 'http://127.0.0.1:8888/framework/js/lib/require.js' :
-                                'http://framework.jpillora.com/js/lib/require.js';
-
-        script.setAttribute('data-main', 
-                      isLocal ? 'http://127.0.0.1:8888/framework/js/framework' :
-                                'http://framework.jpillora.com/js/framework');
-        
-        var s = document.getElementsByTagName('script')[0]; 
-        s.parentNode.insertBefore(script, s);
-
-      })();
-    </script>
+    <script type="text/javascript" src="http://framework.jpillora.com/js/loader.js"></script>
 
   </body>
 </html>
