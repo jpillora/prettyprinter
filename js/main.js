@@ -20,7 +20,5 @@ define(['lib/prettify','jquery'], function(prettify) {
     $("pre").html(code);
   }
   
-  $("textarea").keyup(update);
-  update();
-
+  $("textarea").keyup(update).trigger("keyup");
 });
