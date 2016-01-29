@@ -21,5 +21,6 @@ define(['lib/prettify','jquery'], function(prettify) {
   }
   
   $("textarea").keyup(update);
+  update();
 
 });
